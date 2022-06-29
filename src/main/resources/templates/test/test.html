@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Mustache Tut.</title>
+</head>
+<body>
+    Hello {{name}}!
+    Hello {{{htmlName}}}!
+    <p>
+        <span>boolean값 true인 경우 - </span>
+        {{#section01-1}}
+            Bye!!
+        {{/section01-1}}
+    </p>
+    <p>
+        <span>key로 받은 값이 일반 String인 경우 - </span>
+        {{#section01-2}}
+            Welcome!!
+        {{/section01-2}}
+    </p>
+    <p>
+        <span>key로 받은 값이 List인 경우 - </span>
+        {{#section01-3}}
+            Hide!
+        {{/section01-3}}
+        <span>안보인다</span>
+    </p>
+    <p>
+        <span>key로 받은 값이 false인 경우 - </span>
+        {{#section01-4}}
+            Hide2!
+        {{/section01-4}}
+        <span>안보인다</span>
+    </p>
+    <p>
+        <span>key로 받은 값이 null(falsy)인 경우 - </span>
+        {{#section01-5}}
+            Hide3 Chk!
+        {{/section01-5}}
+        <span>falsy확인!</span>
+    </p>
+    <p>
+        <span>key로 받은 값이 json list이고, 그 섹션 사이에 json list 내부의 각 key가 값으로 들어간 경우- </span>
+        {{#section01-6}}
+            {{key}}
+        {{/section01-6}}
+    </p>
+</body>
+</html>
