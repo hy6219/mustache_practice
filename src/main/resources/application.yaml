@@ -1,8 +1,14 @@
 server:
   port: 9000
+  servlet:
+    encoding:
+      charset: UTF-8
+      force: true
+      enabled: true
 spring:
   mvc:
     view:
       suffix: .html
   mustache:
     suffix: .html
+    charset: UTF-8

@@ -23,9 +23,11 @@ public class MustacheExController {
         mv.addObject("section01-4",false);
         mv.addObject("section01-5",null);
 
+        mv.addObject("section02")
+
         SectionListJsonRequest request = new SectionListJsonRequest(new ArrayList<>(List.of(new SectionJsonDto("ABC"),new SectionJsonDto("DEF"))));
 
-        mv.addObject("section01-6",request);
+        mv.addObject("section01-6",request.getNames());
         return mv;
     }
 }

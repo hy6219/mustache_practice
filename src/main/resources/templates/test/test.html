@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
     <title>Mustache Tut.</title>
 </head>
 <body>
@@ -45,6 +46,13 @@
         {{#section01-6}}
             {{key}}
         {{/section01-6}}
+    </p>
+    <p>
+        <span>key로 받은 값이 list이고, 그 섹션 사이에 .이 값으로 들어간 경우- </span>
+        {{#section01-3}}
+            {{.}}
+        {{/section01-3}}
+        <span>안보인다</span>
     </p>
 </body>
 </html>
